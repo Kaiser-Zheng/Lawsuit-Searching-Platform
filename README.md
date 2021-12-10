@@ -5,7 +5,7 @@ Open Terminal
 Change directory to folder
 
 ```bash
-cd "C:\Users\...\search_platform\project"
+cd "C:\Users\...\Lawsuit_Searching_Platform\project"
 ```
 
 Start the server
