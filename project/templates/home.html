@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">          
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Search Helper</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+        
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="/search_info/">中華開發金控</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#search_id">查詢工商資訊</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#law_personal">查詢個人法律紀錄</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#law_company">查詢公司法律紀律</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-primary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">中華開發金控查詢平台</h1>
+                <p class="lead">值得您信賴的小幫手</p>
+            </div>
+        </header>
+        <!--section-->
+        <section id="search_id">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>查詢工商資訊</h2>
+                        <p class="lead">透過經濟部商業司所提供的商工登記公示資料查詢服務，查詢公司工廠的統一編號、登記機關等工商資訊，其中細項包含登記名稱、統一編號、資料種類、登記機關與登記現況。</p>
+                        <a href="/search_info/search_info" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Start Journey!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section-->
+        <section class="bg-light" id="law_personal">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>查詢個人法律紀錄</h2>
+                        <p class="lead">透過司法院提供的家事事件查詢系統，查詢範圍包括但不限於家事家暴事件、家事非訟事件、家事調解事件、婚姻事件及親子事件與財產關係，同時透過司法院提供的裁判書查詢系統，查詢個人過往的民事、刑事、行政與懲戒裁判紀錄，其中查詢資訊包含日期、發文字號、主旨、依據、公告事項與書記官姓名。</p>
+                        <a href="/search_info/law_personal" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Start Journey!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section-->
+        <section id="law_company">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>查詢公司法律紀錄</h2>
+                        <p class="lead">透過司法院提供的裁判書查詢系統，查詢企業過往的民事、刑事、行政與懲戒裁判紀錄，其中裁判細項包含裁判案由、裁判日期與裁判內容及該裁判之字號，並提供該詳細判決之連結。</p>
+                        <a href="/search_info/law_company" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Start Journey!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; CHINA DEVELOPMENT FINANCIAL</p></div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script> -->
+        <!-- Core theme JS-->
+        <!-- <script src="js/scripts.js"></script> -->
+        
+    </body>
+</html>

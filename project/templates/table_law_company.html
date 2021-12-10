@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">          
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Search Helper</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+        
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="/search_info/">中華開發金控</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+     
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-primary bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">中華開發金控查詢平台</h1>
+                <p class="lead">值得您信賴的小幫手</p>
+            </div>
+        </header>
+        <!--section-->
+        <section id="search_id">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-12">
+                        <div>
+                          <h2 class="text-center">相關法律判決如下</h2><br>            
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>裁判案由</th>
+                                <th>裁判日期</th>
+                                <th>裁判內容</th>
+                                <th>裁判字號</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                            <!-- jinja2 Technique -->
+                            {% if d %}  
+                            {% for i in d %}
+                              <tr>
+                                <td>{{i.title}}</td>
+                                <td>{{i.date}}</td>
+                                <td>{{i.content}}</td>
+                                <td><a href="{{i.url}}">{{i.id}}</a></td>
+                              </tr>
+                            {% endfor %}
+                            {% endif %}
+                            
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; CHINA DEVELOPMENT FINANCIAL</p></div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script> -->
+        <!-- Core theme JS-->
+        <!-- <script src="js/scripts.js"></script> -->
+        
+    </body>
+</html>
+
